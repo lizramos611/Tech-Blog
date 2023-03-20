@@ -15,3 +15,11 @@ if (response.ok) {
     window.alert('Login Successful!');
 } }
 };
+
+const signup = async (event) => {
+    event.preventDefault();
+
+    const email = document.querySelector('#email-signup').value.trim();
+    const username = document.querySelector('#username-signup').value.trim();
+    const password = document.querySelector('#')
+}

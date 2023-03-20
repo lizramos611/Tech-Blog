@@ -1,7 +1,7 @@
 const path = require('path');
 const express = require('express');
 const exphbs = require('express-handlebars');
-const sequalize = require('./config/connection');
+const sequelize = require('./config/connection');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -19,6 +19,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(routes);
 
-sequalize.sync({force: false}).then(() => {
+sequelize.sync({force: false}).then(() => {
     app.listen(PORT, () => console.log('Now Listening!'))
 }); 
