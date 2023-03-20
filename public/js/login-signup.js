@@ -1,7 +1,7 @@
 const login = async (event) => {
     //delcaring email and password on page
-    const password = document.querySelector('#password').value.trim();
-    const email = document.querySelector('#email').value.trim();
+    const password = document.querySelector('#password-login').value.trim();
+    const email = document.querySelector('#email-login').value.trim();
 
     if(password && email) {
         const response = await fetch('api/users/login', {
@@ -21,5 +21,5 @@ const signup = async (event) => {
 
     const email = document.querySelector('#email-signup').value.trim();
     const username = document.querySelector('#username-signup').value.trim();
-    const password = document.querySelector('#')
+    const password = document.querySelector('#password-signup')
 }
